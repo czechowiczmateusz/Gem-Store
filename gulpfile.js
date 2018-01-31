@@ -16,7 +16,7 @@ gulp.task('serve', ['sass'], function() {
         server: "./"
     });
 
-    gulp.watch("./styles/scss/**/*.scss", ['sass']);
+    gulp.watch("./src/scss/**/*.scss", ['sass']);
 
     //Deploy na ftp
 //   gulp.watch("./css/*", ['deployCss']);
@@ -30,7 +30,7 @@ gulp.task('serve', ['sass'], function() {
 
 
 gulp.task('sass', function() { // funkcja callback
-    return gulp.src('./styles/scss/**/*.scss') //-->zrodlo
+    return gulp.src('./src/scss/**/*.scss') //-->zrodlo
         .pipe(sourcemaps.init())
         .pipe(sass({
           outputStyle: 'expanded',
@@ -38,9 +38,9 @@ gulp.task('sass', function() { // funkcja callback
           }))
         .pipe(prefix("last 1 version", "> 1%", "ie 8", "ie 7"))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('styles/css')) // --> gdzie laduja
+        .pipe(gulp.dest('dist/css')) // --> gdzie laduja
         .pipe(browserSync.stream())
-})
+});
 
 
 

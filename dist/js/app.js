@@ -10,22 +10,22 @@
         {
             name: 'Diamond',
             density: 3.5,
-            image: 'styles/scss/images/slot-machine.png'
+            image: 'src/scss/images/slot-machine.png'
         },
         {
             name: 'Diamond',
             density: 3.5,
-            image: 'styles/scss/images/precious-stone.png'
+            image: 'src/scss/images/precious-stone.png'
         },
         {
             name: 'Diamond',
             density: 3.5,
-            image: 'styles/scss/images/gemstone.png'
+            image: 'src/scss/images/gemstone.png'
         },
         {
             name: 'Diamond',
             density: 3.5,
-            image: 'styles/scss/images/gem.png'
+            image: 'src/scss/images/gem.png'
         }
 ];
 })();
