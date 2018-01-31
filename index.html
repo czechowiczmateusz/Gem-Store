@@ -4,15 +4,15 @@
 <head>
   <meta charset="UTF-8">
   <title>First Angular Page</title>
-  <link rel="stylesheet" href="styles/css/main.css">
+  <link rel="stylesheet" href="dist/css/main.css">
 
 </head>
 
 <body ng-controller="GemController as gems">
-  <div ng-repeat="product in gems.products">
-    <h1>{{product.name}}</h1>
-    <h2>{{product.density}}</h2>
+  <div class='gem' ng-repeat="product in gems.products">
     <img ng-src="{{product.image}}">
+    <h1>Name: {{product.name}}</h1>
+    <h2>Density: {{product.density}}</h2>
   </div>
 </body>
 <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.32/angular.min.js"></script>
