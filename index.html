@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html ng-app="gems" lang="pl-PL">
+
+<head>
+  <meta charset="UTF-8">
+  <title>First Angular Page</title>
+  <link rel="stylesheet" href="styles/css/main.css">
+
+</head>
+
+<body ng-controller="GemController as gems">
+  <div ng-repeat="product in gems.products">
+    <h1>{{product.name}}</h1>
+    <h2>{{product.density}}</h2>
+    <img ng-src="{{product.image}}">
+  </div>
+</body>
+<script type="text/javascript" src="node_modules/angular/angular.min.js"></script>
+<script type="text/javascript" src="app.js"></script>
+</html>
